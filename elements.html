@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codekip-elements</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <div class="element-nav">
+    <div>
+        <!-- <h2>CodEkip</h2> -->
+        <img src="images/content-img/logo_200x200.png" alt="" width="160">
+    </div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Create Post <span style="float: right;"><i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></span></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="create-post.html">Upload Project </a>
+          <a href="account.html">Account</a>
+          <a href="#contact">Setting</a>
+        </div>
+      </div>
+</div>
+  <div class="container">
+    <h1 class="text-center my-4">Image Gallery</h1>
+   
+    <div class="row">
+      <!-- Category 1 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="images/sources-img/img-1.webp" class="card-img-top" alt="Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Image 1</h5>
+            <a><button id="continueButton1" onclick="redirectToGoogle1()" class="btn btn-primary">View Source Code</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- Category 2 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="images/sources-img/img-2.png" class="card-img-top" alt="Image 2">
+          <div class="card-body">
+            <h5 class="card-title">Image 2</h5>
+            <a><button id="continueButton2" onclick="redirectToGoogle2()" class="btn btn-primary">View Source Code</button></a>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Category 3 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          
+          <img src="images/sources-img/img-3.webp" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+            <h5 class="card-title">Image 3</h5>
+            <a><button id="continueButton3" onclick="redirectToGoogle3()" class="btn btn-primary">View Source Code</button></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="pagination">
+    <button id="prev" onclick="changePage(-1)">&#9664; Prev</button>
+    <button id="next" onclick="changePage(1)">Next &#9654;</button>
+</div> -->
+   
+
+  <script src="assets/js/elements.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

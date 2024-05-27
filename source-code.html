@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Code Viewer</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="source-page">
+        <h3><a href="elements.html"><i class="fa-regular fa-circle-left" style="color: #303030;cursor: pointer;"></i></a> Source Code</h3>
+   </div>
+    <div id="source-code-container" class="source-code-display">
+      
+      <div class="code-det">
+        <img id="source-image" src="" alt="Source Image" class="img-fluid mb-4">
+        <div class="account-source">
+            
+            <div class="user-profile-request">
+                <img id="users-profile" src="" alt="">
+                <span id="owner-name"></span>
+            </div>
+            <div>
+                <label>Bio :</label>
+                <h5 id="Description" style="color: #303030;"></h5>
+            </div>
+            <div class="contact-me">
+                <label for="">Contact Me :</label><br>
+                <a id="insta"><button><i class="ri-instagram-line"></i></button></a>
+                <a id="github"><button><i class="ri-github-line"></i></button></a>
+                <a id="youtube"><button><i class="ri-youtube-line"></i></button></a>
+            </div>
+        </div>
+       
+      </div>
+
+      <div class="pres">
+        <span><i class="ri-html5-fill"></i> HTML</span>
+        <button class="btn btn-primary copy-button" style="float: right;">Copy Code</button>
+        <pre id="html-code"></pre>
+        
+        <span><i class="ri-css3-fill"></i> CSS</span>
+        <button class="btn btn-primary copy-button" style="float: right;">Copy Code</button>
+        <pre id="css-code"></pre>
+        
+        <span><i class="ri-javascript-fill"></i> JAVASCRIPT</span>
+        <button class="btn btn-primary copy-button" style="float: right;">Copy Code</button>
+        <pre id="js-code"></pre>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="assets/js/elements.js"></script>
+</body>
+</html>

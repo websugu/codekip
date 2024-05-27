@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="assets/css/create-post.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- fontawsome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="create-post-container">
+        <div class="create-post-header">
+            <h2>Create New Post</h2>
+        </div>
+        <div class="create-post-body">
+            <label for="">User Name</label>
+            <input type="text" id="username" required>
+            <div id="validationMessage"></div>
+            <textarea id="postContent" placeholder="Add Description" maxlength="37" required></textarea>
+            <div class="file-upload">
+                <label for="fileUpload">Upload code files</label>
+                <input type="file" id="fileUpload" multiple style="visibility: hidden;" required>
+                <div id="filePreview"></div>
+            </div>
+            <!-- <div class="post-privacy">
+                <label for="privacySelect">Post Privacy</label>
+                <select id="privacySelect">
+                    <option value="public">Public</option>
+                    <option value="private">Private</option>
+                    <option value="friends">Friends</option>
+                </select>
+            </div> -->
+            <div class="create-post-footer">
+                <button type="submit" id="cancelBtn" style="background-color: white;box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">Back</button>
+                <button id="publishBtn" style="background-color: rgb(3, 3, 3);">Publish</button>
+            </div>
+        </div>
+        <hr>
+        <div class="no-account">
+            <small>I don't have account ?<a href="account.html" style="color: rgb(99, 99, 227);"> Create </a></small>
+        </div>
+    </div>
+
+    <script src="assets/js/create-post.js"></script>
+</body>
+</html>

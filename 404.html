@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.loader, .content {
+    display: none;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 5px solid #d6d5d5;
+    border-top: 5px solid #171717;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #128adb;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #2980b9;
+}
+
+</style>
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <div id="content" class="content">
+        <h1>404</h1>
+        <h4>URL Not Found</h4>
+        <p>User's contact me is not available</p>
+        <a href="/"><button>Go Back to Homepage</button></a><br>
+        <a style="font-weight: 600;">CodEkip Status :</a>
+        <a href="https://www.instagram.com/codeekip?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> @codekip</a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const loader = document.getElementById('loader');
+    const content = document.getElementById('content');
+
+    // Show loader
+    loader.style.display = 'flex';
+
+    // Simulate loading delay
+    setTimeout(function() {
+        // Hide loader and show content
+        loader.style.display = 'none';
+        content.style.display = 'block';
+    }, 3000);
+});
+
+    </script>
+</body>
+</html>
