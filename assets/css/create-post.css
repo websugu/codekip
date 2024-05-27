@@ -309,8 +309,8 @@ textarea {
     #username{
         font-weight: 600;
         color: #616161;
-        height: 50px;
-        font-size: 15px;
+        padding: 14px;
+        font-size: 14px;
     }
     textarea {
         resize: vertical;
