@@ -272,8 +272,8 @@ textarea {
 
 @media screen and (max-width: 504px){
     .section{
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .create-post-container {
         background-color: #ffffff;
