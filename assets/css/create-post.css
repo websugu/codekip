@@ -271,6 +271,10 @@ textarea {
 
 
 @media screen and (max-width: 504px){
+    .section{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     .create-post-container {
         background-color: #ffffff;
         border-radius: 8px;
@@ -278,8 +282,6 @@ textarea {
         max-width: 95%;
         padding: 10px 10px;
         margin: auto;
-        margin-top: 75px;
-        margin-bottom: 50px;
     }
     
     .create-post-header {
@@ -309,6 +311,7 @@ textarea {
     #username{
         font-weight: 600;
         color: #616161;
+       
         font-size: 14px;
     }
     textarea {
