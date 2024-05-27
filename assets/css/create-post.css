@@ -300,7 +300,7 @@ textarea {
         font-size: 14px;color: #616161;
     }
     .create-post-body input, .create-post-body textarea, .create-post-body select {
-        padding: 10px;
+        padding: 14px;
         margin-bottom: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -309,7 +309,6 @@ textarea {
     #username{
         font-weight: 600;
         color: #616161;
-        padding: 14px;
         font-size: 14px;
     }
     textarea {
