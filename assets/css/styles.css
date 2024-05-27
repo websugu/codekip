@@ -308,15 +308,15 @@ max-width: 50%;padding-top: 8%;text-align: center;margin: auto;
 
 /* body head start here */
 .body-head{
-  max-width: 90%;padding-top: 18%;text-align: center;margin: auto;
+  max-width: 95%;padding-top: 18%;text-align: center;margin: auto;
   }
   .body-head p{
     font-size: 20px;
   }
   .body-head h1{
-    font-size: calc(2.5rem + 1.5vw);
-      font-weight: 600;line-height: 53px;
-      letter-spacing: -.02rem;
+    font-size:37px;
+      font-weight: 600;line-height: 46px;
+      letter-spacing: 0px;
       width:100%;padding-top: 15px;padding-bottom: 15px;
   }
   .body-head button{
@@ -345,8 +345,8 @@ max-width: 50%;padding-top: 8%;text-align: center;margin: auto;
 }
 .services-head h1{
   font-size: calc(2.5rem + 1.5vw);
-    font-weight: 400;line-height: 80px;
-    letter-spacing: -.02rem;
+    font-weight: 400;line-height: 55px;
+    letter-spacing: none;
     color: black;
 }
 .services-display{
@@ -358,10 +358,10 @@ max-width: 50%;padding-top: 8%;text-align: center;margin: auto;
   margin: 20px;
 }
 .services h3{
-  font-size: rem;
-  padding-top: 10px;
-  color: black;
-  padding-bottom: 10px;
+  font-size: 1.4rem;
+  padding-top: 15px;
+  color: rgb(38, 38, 38);
+  padding-bottom: 0px;
 }.services p{
   font-size: 20px;
 }
@@ -388,10 +388,10 @@ max-width: 50%;padding-top: 8%;text-align: center;margin: auto;
 .pricing-section {
   background-color: #111;
   margin: auto;
-  padding: 120px 10px;
+  padding: 120px 0px;
 }
 .price-sec{
-  max-width: 93%;
+  max-width: 94%;
   margin: auto;
 }
 .col-md-6{
@@ -411,23 +411,24 @@ max-width: 50%;padding-top: 8%;text-align: center;margin: auto;
 }
 
 .pricing-section h1 {
-  font-size: 3em;
+  font-size: 2.2em;
   font-weight: bold;
   margin-bottom: 20px;
-  line-height: 60px;
+  line-height: 40px;
   padding-top: 50px;
   color: white;
 }
 
 .pricing-box {
-  background-color: #333;
-  padding: 60px 50px;
+  background-color: #222222;
+  padding: 30px 24px;
   width: 100%;
-  border-radius: 10px;
-  color: #ddd;line-height: 40px;
+  border-radius: 15px;
+  color: #9f9f9f;line-height: 26px;
   text-align: center;
   margin-bottom: 50px;
   margin-top: 50px;
+  font-size: 14px;
 }
 
 .pricing-box h2 {
@@ -478,7 +479,7 @@ max-width: 50%;padding-top: 8%;text-align: center;margin: auto;
     text-align: center;
     background-color: #557cb2;
     width: 100%;
-    padding: 30px 10px;
+    padding: 30px 20px;
     margin: 0;
     border-radius:15px ;
  
@@ -486,9 +487,9 @@ max-width: 50%;padding-top: 8%;text-align: center;margin: auto;
 }
 
 .text-content h1 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 20px;
-    color: #fff;
+    color: #ffffff;
     line-height: 30px;
 }
 
@@ -670,7 +671,7 @@ a {
   color: var(--first-color);
 }
 .dropdown__title {
-  font-size: var(--small-font-size);
+  font-size: 18px;
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
@@ -678,7 +679,7 @@ a {
   row-gap: 0.25rem;
 }
 .dropdown__link {
-  font-size: var(--smaller-font-size);
+  font-size:17px ;
   font-weight: var(--font-medium);
   color: var(--text-color);
   transition: color 0.3s;
