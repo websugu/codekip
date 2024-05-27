@@ -43,6 +43,7 @@ body {
 #username{
     font-weight: 600;
     color: #616161;
+    height: 45px;
 }
 #validationMessage {
     color: red;
@@ -180,6 +181,7 @@ textarea {
     #username{
         font-weight: 600;
         color: #616161;
+        height: 45px;
     }
     textarea {
         resize: vertical;
@@ -309,7 +311,7 @@ textarea {
     }
     
     #username{
-       
+       height: 45px;
     }
     textarea {
         resize: vertical;
