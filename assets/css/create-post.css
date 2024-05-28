@@ -312,6 +312,7 @@ textarea {
     
     #username{
        height: 45px;
+       font-sizz:16px
     }
     textarea {
         resize: vertical;
