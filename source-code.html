@@ -14,52 +14,66 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="source-page">
-        <h3><a href="elements.html"><i class="fa-regular fa-circle-left" style="color: #303030;cursor: pointer;"></i></a> Source Code</h3>
-   </div>
-    <div id="source-code-container" class="source-code-display">
-      
-      <div class="code-det">
-        <img id="source-image" src="" alt="Source Image" class="img-fluid mb-4">
-        <div class="account-source">
-            
-            <div class="user-profile-request">
-                <img id="users-profile" src="" alt="">
-                <span id="owner-name"></span>
-            </div>
-            <div>
-                <label>Bio :</label>
-                <h5 id="Description" style="color: #303030;"></h5>
-            </div>
-            <div class="contact-me">
-                <label for="">Contact Me :</label><br>
-                <a id="insta"><button><i class="ri-instagram-line"></i></button></a>
-                <a id="github"><button><i class="ri-github-line"></i></button></a>
-                <a id="youtube"><button><i class="ri-youtube-line"></i></button></a>
-            </div>
-        </div>
-       
-      </div>
+  <div id="source-code-container">
+    <!-- Source code details will be populated here -->
+</div>
 
-      <div class="pres">
-        <span><i class="ri-html5-fill"></i> HTML</span>
-        <button class="btn btn-primary copy-button" style="float: right;">Copy Code</button>
-        <pre id="html-code"></pre>
-        
-        <span><i class="ri-css3-fill"></i> CSS</span>
-        <button class="btn btn-primary copy-button" style="float: right;">Copy Code</button>
-        <pre id="css-code"></pre>
-        
-        <span><i class="ri-javascript-fill"></i> JAVASCRIPT</span>
-        <button class="btn btn-primary copy-button" style="float: right;">Copy Code</button>
-        <pre id="js-code"></pre>
-        
-      </div>
-      
-    </div>
-  </div>
+<script src="scripts.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sourceCodeContainer = document.getElementById('source-code-container');
+        const selectedSection = JSON.parse(localStorage.getItem('selectedSection'));
+        if (selectedSection) {
+            sourceCodeContainer.innerHTML = `
+            <div class="source-code-page">   
+                <h2><a href="elements.html"><i class="fa-regular fa-circle-left" style="color: #1c1c1c;"></i></a> Source code</h2>
+                <div class="source-code-display">
+                    <div class="code-owner">
+                    <img src="${selectedSection.image}" alt="${selectedSection.name}" class="code-image">
+                    <hr>
+                    <div class="owner-profile">
+                          <img src="${selectedSection.ownerprofile}">
+                          <h1>${selectedSection.ownername}</h1>
+                    </div>
+                    <div class="owner-infos">
+                        <small>Bio :</small>    
+                        <p>${selectedSection.bio}</p>  
+                        <div class="socials">
+                            <a href="${selectedSection.insta}"><i class="ri-instagram-line"></i></a>
+                            <a href="${selectedSection.insta}"><i class="ri-github-line"></i></a>
+                            <a href="${selectedSection.insta}"><i class="ri-youtube-line"></i></a>
+                        </div>
+                    </div>    
+                    </div>
+                    <div class="source-codes">
+                        <span>HTML</span><button onclick="copyCode('html-code')">Copy HTML</button>
+                        <textarea id="html-code">${selectedSection.source.html}</textarea>
+                        <span>CSS</span><button onclick="copyCode('css-code')">Copy CSS</button>
+                        <textarea id="css-code">${selectedSection.source.css}</textarea>
+                        <span>JavaScrip</span><button onclick="copyCode('js-code')">Copy JavaScript</button>
+                        <textarea id="js-code">${selectedSection.source.js}</textarea>
+                    </div>
+                </div>    
+            </div>     
+            `;
+        } else {
+            sourceCodeContainer.innerHTML = `<p>No section selected.</p>`;
+        }
+    });
 
-  <script src="assets/js/elements.js"></script>
+    window.copyCode = (id) => {
+        const codeElement = document.getElementById(id);
+        const range = document.createRange();
+        range.selectNode(codeElement);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        event.target.innerText = 'Copied!';
+        setTimeout(() => {
+            event.target.innerText = `Copy code ${id.split('-')[0].toUpperCase()}`;
+        }, 1000);
+    };
+</script>
+  <script src="#"></script>
 </body>
 </html>
