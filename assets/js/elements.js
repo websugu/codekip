@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
           image: "https://themewagon.com/wp-content/uploads/2019/06/restaurant.jpg",
           views:"200k",
           ownerprofile:"images/content-img/CodEkip.png",
-          ownername:"Abdourahmane Diarra",
+          ownername:"CodEkip",
           bio:"your users to be at your site for much more longer. Built with HTML & CSS",
           insta:"404.html",
           source: {
@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
           name: "Section 2",
           image: "https://themewagon.com/wp-content/uploads/2017/12/Frame-175-1.png",
           views:"10k",
-          ownerprofile:"http://127.0.0.1:5500/responsive-navigation-bar-main/images/sources-img/users-profiles/request-profile-img.jpg",
-          ownername:"CodEkip",
+          ownerprofile:"images/sources-img/users-profiles/request-profile-img.jpg",
+          ownername:"Abdourahmane Diarra",
           bio:"your users to be at your site for much more longer. Built with HTML & CSS",
           insta:"https://www.instagram.com/codeekip?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
           source: {
