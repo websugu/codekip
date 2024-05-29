@@ -14,7 +14,7 @@
   <div class="element-nav">
     <div>
         <!-- <h2>CodEkip</h2> -->
-        <img src="images/content-img/logo_200x200.png" alt="" width="160">
+        <img src="images/content-img/logo_200x200.png" alt="" width="160" >
     </div>
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Create Post <span style="float: right;"><i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></span></button>
@@ -25,50 +25,17 @@
         </div>
       </div>
 </div>
-  <div class="container">
-    <h1 class="text-center my-4">Image Gallery</h1>
-   
-    <div class="row">
-      <!-- Category 1 -->
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="images/sources-img/img-1.webp" class="card-img-top" alt="Image 1">
-          <div class="card-body">
-            <h5 class="card-title">Image 1</h5>
-            <a><button id="continueButton1" onclick="redirectToGoogle1()" class="btn btn-primary">View Source Code</button></a>
-          </div>
-        </div>
-      </div>
-      <!-- Category 2 -->
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="images/sources-img/img-2.png" class="card-img-top" alt="Image 2">
-          <div class="card-body">
-            <h5 class="card-title">Image 2</h5>
-            <a><button id="continueButton2" onclick="redirectToGoogle2()" class="btn btn-primary">View Source Code</button></a>
-            
-          </div>
-        </div>
-      </div>
-      <!-- Category 3 -->
-      <div class="col-md-4">
-        <div class="card mb-4">
-          
-          <img src="images/sources-img/img-3.webp" class="card-img-top" alt="Image 3">
-          <div class="card-body">
-            <h5 class="card-title">Image 3</h5>
-            <a><button id="continueButton3" onclick="redirectToGoogle3()" class="btn btn-primary">View Source Code</button></a>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="pagination">
-    <button id="prev" onclick="changePage(-1)">&#9664; Prev</button>
-    <button id="next" onclick="changePage(1)">Next &#9654;</button>
-</div> -->
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="Search for a section...">
+    <button onclick="searchSection()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+</div>
+<div id="loading-animation" style="display: none;" class="loading"><img src="https://icons8.com/preloaders/preloaders/320/Search%20with%20arrow.gif" alt="" width="100"></div>
+<div id="sections-container">
+    <!-- Sections will be dynamically populated here -->
+</div>
+<div id="not-found" style="display: none;">
+    Section not found. You can search: [list suggestions here]
+</div>
    
 
   <script src="assets/js/elements.js"></script>
