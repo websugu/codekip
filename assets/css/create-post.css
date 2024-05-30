@@ -33,7 +33,8 @@ body {
     font-size: 15px;color: #616161;
 }
 .create-post-body input, .create-post-body textarea, .create-post-body select {
-    
+    font-size: 17px;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -41,9 +42,8 @@ body {
 }
 
 #username{
-    font-weight: 600;
+    font-weight: 500;
     color: #616161;
-    height: 45px;
 }
 #validationMessage {
     color: red;
@@ -171,7 +171,8 @@ textarea {
         font-size: 15px;color: #616161;
     }
     .create-post-body input, .create-post-body textarea, .create-post-body select {
-        
+        font-size: 17px;
+        width: 100%;
         padding: 10px;
         margin-bottom: 10px;
         border: 1px solid #ccc;
@@ -181,7 +182,6 @@ textarea {
     #username{
         font-weight: 600;
         color: #616161;
-        height: 45px;
     }
     textarea {
         resize: vertical;
@@ -311,8 +311,7 @@ textarea {
     }
     
     #username{
-       height: 45px;
-       font-sizz:16px
+       
     }
     textarea {
         resize: vertical;
