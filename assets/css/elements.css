@@ -535,10 +535,10 @@ body {
 
 #search-input {
   
-  width: 260px;
+ border: 1px solid rgb(192, 190, 190);
+  width: 265px;
   padding: 10px;
   border-radius: 25px;
-  border: 1px solid rgb(165, 165, 165);
   font-size: 16px;
 }
 
