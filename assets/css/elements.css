@@ -533,7 +533,7 @@ body {
   padding: 10px;
   border-radius: 25px;
   border: 1px solid rgb(165, 165, 165);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 
@@ -550,7 +550,7 @@ body {
 .elements button{
   padding: 8px;
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: auto;
   margin-bottom: 10px;
   border-radius: 5px;
   border:none;
@@ -562,7 +562,7 @@ body {
   float: right;
   padding-right: 15px;
   padding: 10px;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 500;
   color: rgb(93, 93, 93);
 }
