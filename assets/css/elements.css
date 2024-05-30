@@ -499,27 +499,36 @@ body {
 }
 /* source code page end here */
 
+.search-engine{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 99%;
+  margin: auto;
+}
+
 #search-container{
-  margin-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin: auto;
   text-align: left;
   max-width: 90%;
 }
 #search-container button{
-  padding: 6px 10px;
+  padding: 10px 13px;
   border-radius: 30px;
   cursor: pointer;
   background-color: black;
   color: white;
-  position: absolute;
-  left: 84.50%;
-  top: 16.90%;
+
+ 
 }
 
 #search-input {
-  position: relative;
-  width: 100%;
+  
+  width: 250px;
   padding: 10px;
   border-radius: 25px;
   border: 1px solid rgb(165, 165, 165);
