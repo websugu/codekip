@@ -80,7 +80,15 @@ document.getElementById('publishBtn').addEventListener('click', function() {
     };
 
     console.log('Post Data:', postData);
-    window.location.href='post-created.html';
+    // window.location.href='post-created.html';
+    const allowedUsernames = ['@ ahmed', '@ daouda', '@ karamoko', '@ dramane']; // List of allowed usernames
+    if (allowedUsernames.includes(username)) {
+        // Navigate to Google.com
+        window.location.href = 'post-created.html';
+    } else {
+        document.getElementById('validationMessage').innerHTML='Username not found! create. <i class="fa-solid fa-circle-xmark" style="color: #e0271a;"></i>';
+        validationMessage.style.color = 'red';
+    }
 });
 
 document.getElementById('cancelBtn').addEventListener('click', function() {
@@ -91,6 +99,11 @@ document.getElementById('cancelBtn').addEventListener('click', function() {
     // document.getElementById('filePreview').innerHTML = '';
     // document.getElementById('privacySelect').value = 'public';
 });
+
+
+
+
+
 
 // input username (@) required
 
@@ -128,6 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
             validationMessage.style.color = 'red';
         }
     });
+
+        
 });
 
 // no inspect
