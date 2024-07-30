@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user Detail</title>
+    <link rel="stylesheet" href="assets/css/user-profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!--=============== REMIXICONS ===============-->
+  <!--=============== REMIXICONS ===============-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- font google -->
+</head>
+<body>
+    <div id="spinner" class="spinner"></div>
+    <div id="content" class="hidden">
+        <div class="profil-container">
+            <div class="profil-container-ajusts">
+                <div  class="profile-head">
+                    <div class="profile-head-info">
+                        <img id="item-image" src="asset/" alt="Item Image" onerror="imageError()">
+                        <h1 id="item-name"></h1>
+                    </div>
+                    <div>
+                        <h2>100%</h2>
+                        <h4>Participation</h4>
+                    </div>
+                    <div>
+                        <h2>100%</h2>
+                        <h4 id="item-price"></h4>
+                    </div>
+                </div>    
+                <div class="profile-about">
+                    <h3 id="item-email"> <i class="fa-solid fa-envelope" style="color: #e8e8e8;"></i></h3>
+                    <p id="item-about"></p>
+                    <h4 id="item-skils"></h4> 
+                </div>
+                <h3 style="text-align: right;color: azure;font-size: 16px;">All Post</h3>
+                
+            </div>  
+            <hr>
+                
+                <div class="all-project">
+                    <div class="user-projects">
+                        <img src="images/sources-img/img-1.webp" alt="" width="300">
+                        <div class="user-projects-btn">
+                            <small><i class="ri-calendar-schedule-line"></i> 31 / 12 / 2024</small>
+                            <button><i class="fa-solid fa-code" style="color:rgb(225, 223, 223);"></i> Get Code</button>
+                        </div>
+                    </div>
+                    <div class="user-projects">
+                        <img src="images/sources-img/img-1.webp" alt="" width="300">
+                        <div class="user-projects-btn">
+                            <span>Posted :</span>
+                            <button><i class="fa-solid fa-code" style="color:rgb(225, 223, 223);"></i> Get Code</button>
+                        </div>
+                    </div>
+                    <div class="user-projects">
+                        <img src="images/sources-img/img-1.webp" alt="" width="300">
+                        <div class="user-projects-btn">
+                            <span>Posted :</span>
+                            <button><i class="fa-solid fa-code" style="color:rgb(225, 223, 223);"></i> Get Code</button>
+                        </div>
+                    </div>
+                    <div class="user-projects">
+                        <img src="images/sources-img/img-1.webp" alt="" width="300">
+                        <div class="user-projects-btn">
+                            <span>Posted :</span>
+                            <a href="http://192.168.0.109:5500/source-code.html"><button><i class="fa-solid fa-code" style="color:rgb(225, 223, 223);"></i> Get Code</button></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div id="error-message" class="hidden error-message"></div>
+
+    <script>
+        // Show the spinner and hide the content initially
+        document.getElementById('spinner').style.display = 'block';
+        document.getElementById('content').style.display = 'none';
+        document.getElementById('error-message').style.display = 'none';
+
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const image = urlParams.get('image');
+        const price = urlParams.get('price');
+        const about = urlParams.get('about');
+        const skils = urlParams.get('skils');
+        const email = urlParams.get('email');
+
+        function showError(message) {
+            document.getElementById('spinner').style.display = 'none';
+            document.getElementById('error-message').textContent = message;
+            document.getElementById('error-message').style.display = 'block';
+        }
+
+        function imageError() {
+            showError("Failed to load the image.");
+        }
+
+        // Validate parameters and set the content
+        if (name && image && price) {
+            document.getElementById('item-name').textContent = name;
+            document.getElementById('item-image').src = image;
+            document.getElementById('item-price').textContent = `${price}`;
+            document.getElementById('item-about').textContent = `${about}`;
+            document.getElementById('item-skils').textContent = `${skils}`;
+            document.getElementById('item-email').textContent = `${email}`;
+
+            // Show content after 3 seconds
+            setTimeout(() => {
+                document.getElementById('spinner').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }, 3000);
+        } else {
+            showError("Missing item information. Please go back and select an item again.");
+        }
+    </script>
+    <script src="assets/js/elements.js"></script>
+</body>
+</html>
