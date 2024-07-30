@@ -10,8 +10,9 @@ body {
 #item-image {
     width: 170px;
     height: auto;
-    border-radius: 100px;
+    border-radius: 10px;
     text-align: right;
+    border: 2px solid white;
 }
 .profile-about{
     text-align: left;
@@ -83,10 +84,11 @@ body {
     background: #20252e;
   }
 .profil-container{
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
-    border: 2px solid #1e232a;
+    /* border: 2px solid #1e232a; */
     border-radius: 5px;
+    border: none;
 }
 hr{
     border: 1px solid #1e232a;
@@ -220,7 +222,7 @@ hr{
     .profil-container{
         max-width:100%;
         margin: auto;
-        border: 2px solid #1a2027;
+        border:none;
         border-radius: 5px;
     }
     .profil-container-ajusts{
@@ -246,7 +248,7 @@ hr{
         height: 45px;
         animation: spin 0.50s linear infinite;
         margin: 0 auto;
-        margin-top: 25%;
+        margin-top: 60%;
     }
     
     @keyframes spin {
@@ -353,5 +355,15 @@ hr{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .spinner {
+        border: 5px solid #f3f3f3; /* Light grey */
+        border-top: 5px solid #161c22; /* Blue */
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        animation: spin 0.50s linear infinite;
+        margin: 0 auto;
+        margin-top: 60%;
     }
 }
