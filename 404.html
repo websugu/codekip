@@ -16,7 +16,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background: #0e1217;
 }
 
 .loader, .content {
@@ -59,10 +59,10 @@
 
 .content button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 18px;
     color: white;
-    background-color: #128adb;
+    background-color: #128bdb5d;
     text-decoration: none;
     border-radius: 5px;
     border: none;
@@ -73,7 +73,30 @@
 .content button:hover {
     background-color: #2980b9;
 }
+@media screen and (max-width: 470px){
+    .content h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
 
+.content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content button {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #128bdb5d;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+}
 </style>
 <body>
     <div id="loader" class="loader">
@@ -81,11 +104,11 @@
     </div>
     <div id="content" class="content">
         <h1>404</h1>
-        <h4>URL Not Found</h4>
-        <p>User's contact me is not available</p>
-        <a href="/"><button>Go Back to Homepage</button></a><br>
+        <h4>Page Not Found!</h4>
+        <p>Sorry! This URL is not available</p>
+        <a href="/"><button>Go back to home page</button></a><br>
         <a style="font-weight: 600;">CodEkip Status :</a>
-        <a href="https://www.instagram.com/codeekip?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> @codekip</a>
+        <a href="https://www.instagram.com/codeekip?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="color: rgb(52, 52, 181);"> @codekip</a>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
